@@ -92,8 +92,8 @@ Authorization: Bearer <token>
 O projeto inclui um usuário admin em memória para facilitar os testes. Use as credenciais abaixo para login durante o desenvolvimento:
 
 ```
-email: admin@spsgroup.com.br
-password: 1234
+email: admin@sps.com.br
+password: admin123
 ```
 
 ## Observações

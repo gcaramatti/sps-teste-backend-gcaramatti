@@ -1,13 +1,16 @@
-const express = require("express");
-const routes = require("./routes");
-const cors = require("cors");
-
+const express = require('express');
+const cors = require('cors');
 const app = express();
+const authRoutes = require('./routes/auth.routes');
+const userRoutes = require('./routes/user.routes');
+const errorMiddleware = require('./middlewares/error.middleware');
 
 app.use(cors());
+app.use(express.json());
 
-app.use(routes);
+app.use('/auth', authRoutes);
+app.use('/users', userRoutes);
 
-app.listen(process.env.PORT, () => {
-  console.log("Server is running on http://localhost:3000");
-});
+app.use(errorMiddleware);
+
+module.exports = app;

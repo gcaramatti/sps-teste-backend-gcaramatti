@@ -10,6 +10,30 @@ users.push({
     passwordHash: bcrypt.hashSync('admin123', 10),
     createdAt: now,
     updatedAt: now,
+},
+{
+    id: idCounter++,
+    email: 'admin@sps1.com',
+    name: 'Gabriel admin 1',
+    passwordHash: bcrypt.hashSync('admin123', 10),
+    createdAt: now,
+    updatedAt: now,
+},
+{
+    id: idCounter++,
+    email: 'admin@sps2.com',
+    name: 'Gabriel admin 2',
+    passwordHash: bcrypt.hashSync('admin123', 10),
+    createdAt: now,
+    updatedAt: now,
+}
+,{
+    id: idCounter++,
+    email: 'admin@sps3.com',
+    name: 'Gabriel admin 3',
+    passwordHash: bcrypt.hashSync('admin123', 10),
+    createdAt: now,
+    updatedAt: now,
 });
 
 

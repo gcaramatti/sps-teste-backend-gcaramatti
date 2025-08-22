@@ -93,7 +93,7 @@ O projeto inclui um usuário admin em memória para facilitar os testes. Use as 
 
 ```
 email: admin@spsgroup.com.br
-password: 1234
+password: admin123
 ```
 
 ## Observações
